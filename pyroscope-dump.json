@@ -1,0 +1,261 @@
+{
+  "Setting": {
+    "Name": "jfs",
+    "UUID": "4bc8d174-d651-466c-a8f1-05333cca55da",
+    "Storage": "minio",
+    "Bucket": "http://192.168.11.71:9000/jfs",
+    "AccessKey": "minioadmin",
+    "SecretKey": "removed",
+    "BlockSize": 4096,
+    "Compression": "none",
+    "Capacity": 1073741824000,
+    "KeyEncrypted": true,
+    "MetaVersion": 1
+  },
+  "Counters": {
+    "usedSpace": 5437964288,
+    "usedInodes": 14,
+    "nextInodes": 1001,
+    "nextChunk": 22001,
+    "nextSession": 9,
+    "nextTrash": 0
+  },
+  "Sustained": [],
+  "DelFiles": [],
+  "FSTree": {
+    "attr": {"inode":1,"type":"directory","mode":511,"uid":0,"gid":0,"atime":1658718233,"mtime":1658806637,"ctime":1658806637,"mtimensec":868150574,"ctimensec":868150574,"nlink":5,"length":0},
+    "xattrs": [{"name":"lastBackup","value":"2022-07-26T10:59:47+08:00"}],
+    "entries": {
+      "imagecache": {
+        "attr": {"inode":902,"type":"directory","mode":493,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806563,"ctime":1658806563,"atimensec":417874686,"mtimensec":420368944,"ctimensec":420368944,"nlink":3,"length":0},
+        "entries": {
+          "iso": {
+            "attr": {"inode":903,"type":"directory","mode":493,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806563,"ctime":1658806563,"atimensec":420368944,"mtimensec":422769979,"ctimensec":422769979,"nlink":3,"length":0},
+            "entries": {
+              "01cafb6df0eb4ecab5a514e3a37c8fc6": {
+                "attr": {"inode":904,"type":"directory","mode":493,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806637,"ctime":1658806637,"atimensec":422769979,"mtimensec":544210384,"ctimensec":544210384,"nlink":3,"length":0},
+                "entries": {
+                  "01cafb6df0eb4ecab5a514e3a37c8fc6.image-lck": {
+                    "attr": {"inode":905,"type":"regular","mode":416,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806563,"ctime":1658806563,"atimensec":425123362,"mtimensec":425123362,"ctimensec":425123362,"nlink":1,"length":0}
+                  },
+                  "01cafb6df0eb4ecab5a514e3a37c8fc6.imf2": {
+                    "attr": {"inode":910,"type":"regular","mode":420,"uid":0,"gid":0,"atime":1658806637,"mtime":1658806637,"ctime":1658806637,"atimensec":549592095,"mtimensec":596590751,"ctimensec":596590751,"nlink":1,"length":346},
+                    "chunks": [{"index":0,"slices":[{"chunkid":17073,"size":346,"len":346}]}]
+                  },
+                  "01cafb6df0eb4ecab5a514e3a37c8fc6.iso": {
+                    "attr": {"inode":909,"type":"regular","mode":420,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806636,"ctime":1658806637,"atimensec":444569739,"mtimensec":842946813,"ctimensec":547945837,"nlink":2,"length":4712300544},
+                    "chunks": [
+                      {"index":0,"slices":[{"chunkid":17002,"size":67108864,"len":67108864}]},
+                      {"index":1,"slices":[{"chunkid":17003,"size":67108864,"len":67108864}]},
+                      {"index":2,"slices":[{"chunkid":17004,"size":67108864,"len":67108864}]},
+                      {"index":3,"slices":[{"chunkid":17005,"size":67108864,"len":67108864}]},
+                      {"index":4,"slices":[{"chunkid":17006,"size":67108864,"len":67108864}]},
+                      {"index":5,"slices":[{"chunkid":17007,"size":67108864,"len":67108864}]},
+                      {"index":6,"slices":[{"chunkid":17008,"size":67108864,"len":67108864}]},
+                      {"index":7,"slices":[{"chunkid":17009,"size":67108864,"len":67108864}]},
+                      {"index":8,"slices":[{"chunkid":17010,"size":67108864,"len":67108864}]},
+                      {"index":9,"slices":[{"chunkid":17011,"size":67108864,"len":67108864}]},
+                      {"index":10,"slices":[{"chunkid":17012,"size":67108864,"len":67108864}]},
+                      {"index":11,"slices":[{"chunkid":17013,"size":67108864,"len":67108864}]},
+                      {"index":12,"slices":[{"chunkid":17014,"size":67108864,"len":67108864}]},
+                      {"index":13,"slices":[{"chunkid":17015,"size":67108864,"len":67108864}]},
+                      {"index":14,"slices":[{"chunkid":17016,"size":67108864,"len":67108864}]},
+                      {"index":15,"slices":[{"chunkid":17017,"size":67108864,"len":67108864}]},
+                      {"index":16,"slices":[{"chunkid":17018,"size":67108864,"len":67108864}]},
+                      {"index":17,"slices":[{"chunkid":17019,"size":67108864,"len":67108864}]},
+                      {"index":18,"slices":[{"chunkid":17020,"size":67108864,"len":67108864}]},
+                      {"index":19,"slices":[{"chunkid":17021,"size":67108864,"len":67108864}]},
+                      {"index":20,"slices":[{"chunkid":17022,"size":67108864,"len":67108864}]},
+                      {"index":21,"slices":[{"chunkid":17023,"size":67108864,"len":67108864}]},
+                      {"index":22,"slices":[{"chunkid":17024,"size":67108864,"len":67108864}]},
+                      {"index":23,"slices":[{"chunkid":17025,"size":67108864,"len":67108864}]},
+                      {"index":24,"slices":[{"chunkid":17026,"size":67108864,"len":67108864}]},
+                      {"index":25,"slices":[{"chunkid":17027,"size":67108864,"len":67108864}]},
+                      {"index":26,"slices":[{"chunkid":17028,"size":67108864,"len":67108864}]},
+                      {"index":27,"slices":[{"chunkid":17029,"size":67108864,"len":67108864}]},
+                      {"index":28,"slices":[{"chunkid":17030,"size":67108864,"len":67108864}]},
+                      {"index":29,"slices":[{"chunkid":17031,"size":67108864,"len":67108864}]},
+                      {"index":30,"slices":[{"chunkid":17032,"size":67108864,"len":67108864}]},
+                      {"index":31,"slices":[{"chunkid":17033,"size":67108864,"len":67108864}]},
+                      {"index":32,"slices":[{"chunkid":17034,"size":67108864,"len":67108864}]},
+                      {"index":33,"slices":[{"chunkid":17035,"size":67108864,"len":67108864}]},
+                      {"index":34,"slices":[{"chunkid":17036,"size":67108864,"len":67108864}]},
+                      {"index":35,"slices":[{"chunkid":17037,"size":67108864,"len":67108864}]},
+                      {"index":36,"slices":[{"chunkid":17038,"size":67108864,"len":67108864}]},
+                      {"index":37,"slices":[{"chunkid":17039,"size":67108864,"len":67108864}]},
+                      {"index":38,"slices":[{"chunkid":17040,"size":67108864,"len":67108864}]},
+                      {"index":39,"slices":[{"chunkid":17041,"size":67108864,"len":67108864}]},
+                      {"index":40,"slices":[{"chunkid":17042,"size":67108864,"len":67108864}]},
+                      {"index":41,"slices":[{"chunkid":17043,"size":67108864,"len":67108864}]},
+                      {"index":42,"slices":[{"chunkid":17044,"size":67108864,"len":67108864}]},
+                      {"index":43,"slices":[{"chunkid":17045,"size":67108864,"len":67108864}]},
+                      {"index":44,"slices":[{"chunkid":17046,"size":67108864,"len":67108864}]},
+                      {"index":45,"slices":[{"chunkid":17047,"size":67108864,"len":67108864}]},
+                      {"index":46,"slices":[{"chunkid":17048,"size":67108864,"len":67108864}]},
+                      {"index":47,"slices":[{"chunkid":17049,"size":67108864,"len":67108864}]},
+                      {"index":48,"slices":[{"chunkid":17050,"size":67108864,"len":67108864}]},
+                      {"index":49,"slices":[{"chunkid":17051,"size":67108864,"len":67108864}]},
+                      {"index":50,"slices":[{"chunkid":17052,"size":67108864,"len":67108864}]},
+                      {"index":51,"slices":[{"chunkid":17053,"size":67108864,"len":67108864}]},
+                      {"index":52,"slices":[{"chunkid":17054,"size":67108864,"len":67108864}]},
+                      {"index":53,"slices":[{"chunkid":17055,"size":67108864,"len":67108864}]},
+                      {"index":54,"slices":[{"chunkid":17056,"size":67108864,"len":67108864}]},
+                      {"index":55,"slices":[{"chunkid":17057,"size":67108864,"len":67108864}]},
+                      {"index":56,"slices":[{"chunkid":17058,"size":67108864,"len":67108864}]},
+                      {"index":57,"slices":[{"chunkid":17059,"size":67108864,"len":67108864}]},
+                      {"index":58,"slices":[{"chunkid":17060,"size":67108864,"len":67108864}]},
+                      {"index":59,"slices":[{"chunkid":17061,"size":67108864,"len":67108864}]},
+                      {"index":60,"slices":[{"chunkid":17062,"size":67108864,"len":67108864}]},
+                      {"index":61,"slices":[{"chunkid":17063,"size":67108864,"len":67108864}]},
+                      {"index":62,"slices":[{"chunkid":17064,"size":67108864,"len":67108864}]},
+                      {"index":63,"slices":[{"chunkid":17065,"size":67108864,"len":67108864}]},
+                      {"index":64,"slices":[{"chunkid":17066,"size":67108864,"len":67108864}]},
+                      {"index":65,"slices":[{"chunkid":17067,"size":67108864,"len":67108864}]},
+                      {"index":66,"slices":[{"chunkid":17068,"size":67108864,"len":67108864}]},
+                      {"index":67,"slices":[{"chunkid":17069,"size":67108864,"len":67108864}]},
+                      {"index":68,"slices":[{"chunkid":17070,"size":67108864,"len":67108864}]},
+                      {"index":69,"slices":[{"chunkid":17071,"size":67108864,"len":67108864}]},
+                      {"index":70,"slices":[{"chunkid":17072,"size":14680064,"len":14680064}]}
+                    ]
+                  },
+                  "download-01cafb6df0eb4ecab5a514e3a37c8fc6": {
+                    "attr": {"inode":908,"type":"directory","mode":509,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806637,"ctime":1658806637,"atimensec":442187774,"mtimensec":545900615,"ctimensec":545900615,"nlink":2,"length":0},
+                    "entries": {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "rootVolumes": {
+        "attr": {"inode":911,"type":"directory","mode":511,"uid":0,"gid":0,"atime":1658806637,"mtime":1658806637,"ctime":1658806637,"atimensec":868150574,"mtimensec":869939364,"ctimensec":869939364,"nlink":3,"length":0},
+        "entries": {
+          "acct-36c27e8ff05c4780bf6d2fa65700f22e": {
+            "attr": {"inode":912,"type":"directory","mode":511,"uid":0,"gid":0,"atime":1658806637,"mtime":1658806637,"ctime":1658806637,"atimensec":869939364,"mtimensec":871469732,"ctimensec":871469732,"nlink":3,"length":0},
+            "entries": {
+              "vol-97dfe78469b5483d9b9df980597ac800": {
+                "attr": {"inode":913,"type":"directory","mode":511,"uid":0,"gid":0,"atime":1658806637,"mtime":1658806637,"ctime":1658806637,"atimensec":871469732,"mtimensec":899035364,"ctimensec":899035364,"nlink":2,"length":0},
+                "entries": {
+                  "97dfe78469b5483d9b9df980597ac800.qcow2": {
+                    "attr": {"inode":914,"type":"regular","mode":432,"uid":0,"gid":0,"atime":1658806637,"mtime":1658807115,"ctime":1658807115,"atimensec":899035364,"mtimensec":294972755,"ctimensec":294972755,"nlink":1,"length":725614592},
+                    "chunks": [
+                      {"index":0,"slices":[{"chunkid":19132,"size":65028096,"len":65028096},{"chunkid":19627,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":19643,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":19647,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":20097,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":20101,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":20243,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":20249,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":20567,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":20580,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":20586,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":20654,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":20656,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":20893,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":20894,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21040,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21051,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21056,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21057,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21063,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21066,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21068,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21304,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21306,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21442,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21443,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21508,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21512,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21640,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21650,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21659,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21660,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21668,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21678,"pos":8388608,"size":2097152,"len":2097152},{"chunkid":21688,"pos":4194304,"size":2097152,"len":2097152},{"chunkid":21690,"pos":8388608,"size":2097152,"len":2097152}]},
+                      {"index":1,"slices":[{"chunkid":21695,"size":67108864,"len":67108864}]},
+                      {"index":2,"slices":[{"chunkid":21667,"size":67108864,"len":67108864}]},
+                      {"index":3,"slices":[{"chunkid":18221,"size":4194304,"len":4194304},{"chunkid":18232,"pos":4194304,"size":626688,"len":626688},{"chunkid":18233,"pos":6291456,"size":819200,"len":819200},{"chunkid":18258,"pos":7110656,"size":1454080,"len":1454080},{"chunkid":18275,"pos":10485760,"size":3416064,"len":3416064},{"chunkid":18280,"pos":8564736,"size":65536,"len":65536},{"chunkid":18279,"pos":13901824,"size":7069696,"len":7069696},{"chunkid":18283,"pos":4820992,"size":16384,"len":16384},{"chunkid":18282,"pos":20971520,"size":2097152,"len":2097152},{"chunkid":18287,"pos":8630272,"size":225280,"len":225280},{"chunkid":18289,"pos":4837376,"size":86016,"len":86016},{"chunkid":18291,"pos":4956160,"size":1335296,"len":1335296},{"chunkid":18286,"pos":23068672,"size":4755456,"len":4755456},{"chunkid":18294,"pos":29360128,"size":135168,"len":135168},{"chunkid":18295,"pos":31457280,"size":6692864,"len":6692864},{"chunkid":18296,"pos":38150144,"size":18964480,"len":18964480},{"chunkid":18297,"pos":57114624,"size":5414912,"len":5414912},{"chunkid":18303,"pos":64077824,"size":3031040,"len":3031040},{"chunkid":18309,"pos":62529536,"size":1548288,"len":1548288},{"chunkid":18347,"pos":29495296,"size":1961984,"len":1961984},{"chunkid":18336,"pos":8855552,"size":8192,"len":8192},{"chunkid":18342,"pos":4923392,"size":16384,"len":16384},{"chunkid":18387,"pos":8863744,"size":1175552,"len":1175552},{"chunkid":18381,"pos":27824128,"size":1536000,"len":1536000},{"chunkid":18382,"pos":4943872,"size":4096,"len":4096},{"chunkid":18393,"pos":10039296,"size":4096,"len":4096},{"chunkid":18425,"pos":10043392,"size":323584,"len":323584},{"chunkid":18436,"pos":10039296,"size":4096,"len":4096},{"chunkid":18457,"pos":10039296,"size":4096,"len":4096},{"chunkid":18466,"pos":4947968,"size":4096,"len":4096},{"chunkid":18484,"pos":10039296,"size":4096,"len":4096},{"chunkid":18492,"pos":4952064,"size":4096,"len":4096},{"chunkid":18528,"pos":10403840,"size":12288,"len":12288},{"chunkid":18578,"pos":10366976,"size":36864,"len":36864},{"chunkid":18592,"pos":4939776,"size":4096,"len":4096},{"chunkid":18630,"pos":10039296,"size":4096,"len":4096},{"chunkid":18671,"pos":4952064,"size":4096,"len":4096},{"chunkid":18768,"pos":10420224,"size":65536,"len":65536},{"chunkid":18765,"pos":4952064,"size":4096,"len":4096},{"chunkid":18924,"pos":10039296,"size":4096,"len":4096},{"chunkid":19025,"pos":10366976,"size":36864,"len":36864},{"chunkid":19022,"pos":10416128,"size":4096,"len":4096},{"chunkid":19036,"pos":4939776,"size":4096,"len":4096},{"chunkid":19546,"pos":10366976,"size":4096,"len":4096},{"chunkid":19545,"pos":10387456,"size":16384,"len":16384},{"chunkid":19595,"pos":10039296,"size":4096,"len":4096},{"chunkid":19793,"pos":10039296,"size":4096,"len":4096},{"chunkid":19962,"pos":10366976,"size":4096,"len":4096},{"chunkid":19968,"pos":4939776,"size":4096,"len":4096},{"chunkid":20342,"pos":10039296,"size":4096,"len":4096},{"chunkid":20373,"pos":10366976,"size":4096,"len":4096},{"chunkid":20749,"pos":10366976,"size":4096,"len":4096},{"chunkid":20767,"pos":4939776,"size":4096,"len":4096},{"chunkid":21128,"pos":4939776,"size":4096,"len":4096},{"chunkid":21356,"pos":10039296,"size":4096,"len":4096},{"chunkid":21382,"pos":10039296,"size":4096,"len":4096},{"chunkid":21428,"pos":10039296,"size":4096,"len":4096},{"chunkid":21630,"pos":10366976,"size":4096,"len":4096}]},
+                      {"index":4,"slices":[{"chunkid":0,"pos":18874368,"size":0,"len":4280287232},{"chunkid":18302,"size":3678208,"len":3678208},{"chunkid":18300,"pos":4194304,"size":14680064,"len":14680064},{"chunkid":0,"pos":35651584,"size":0,"len":4286578688},{"chunkid":0,"pos":58720256,"size":0,"len":4280287232},{"chunkid":18304,"pos":19906560,"size":7356416,"len":7356416},{"chunkid":18305,"pos":27262976,"size":9576448,"len":9576448},{"chunkid":18311,"pos":3678208,"size":516096,"len":516096},{"chunkid":18308,"pos":18874368,"size":1032192,"len":1032192},{"chunkid":18306,"pos":36839424,"size":7200768,"len":7200768},{"chunkid":18307,"pos":44040192,"size":14680064,"len":14680064},{"chunkid":18313,"pos":58720256,"size":8388608,"len":8388608}]},
+                      {"index":5,"slices":[{"chunkid":21675,"size":67108864,"len":67108864}]},
+                      {"index":6,"slices":[{"chunkid":20877,"size":122880,"len":122880},{"chunkid":0,"pos":14680064,"size":0,"len":4292870144},{"chunkid":0,"pos":50331648,"size":0,"len":4288675840},{"chunkid":21029,"pos":348160,"size":8192,"len":8192},{"chunkid":21031,"pos":397312,"size":12288,"len":12288},{"chunkid":21026,"pos":442368,"size":7303168,"len":7303168},{"chunkid":21027,"pos":7745536,"size":4837376,"len":4837376},{"chunkid":21028,"pos":12582912,"size":8818688,"len":8818688},{"chunkid":21030,"pos":21401600,"size":10055680,"len":10055680},{"chunkid":21032,"pos":31457280,"size":12582912,"len":12582912},{"chunkid":21033,"pos":44040192,"size":12582912,"len":12582912},{"chunkid":21050,"pos":56623104,"size":4599808,"len":4599808},{"chunkid":21052,"pos":62914560,"size":4194304,"len":4194304},{"chunkid":21054,"pos":61222912,"size":36864,"len":36864},{"chunkid":21102,"pos":122880,"size":225280,"len":225280},{"chunkid":21099,"pos":356352,"size":40960,"len":40960},{"chunkid":21103,"pos":409600,"size":32768,"len":32768},{"chunkid":21131,"pos":61259776,"size":45056,"len":45056},{"chunkid":21574,"pos":61505536,"size":12288,"len":12288},{"chunkid":21619,"pos":204800,"size":8192,"len":8192},{"chunkid":21635,"pos":409600,"size":32768,"len":32768},{"chunkid":21648,"pos":61276160,"size":16384,"len":16384},{"chunkid":21645,"pos":61304832,"size":81920,"len":81920},{"chunkid":21646,"pos":61390848,"size":45056,"len":45056},{"chunkid":21643,"pos":61440000,"size":65536,"len":65536},{"chunkid":21654,"pos":61517824,"size":1396736,"len":1396736}]},
+                      {"index":7,"slices":[{"chunkid":21053,"size":7487488,"len":7487488},{"chunkid":21058,"pos":8605696,"size":3829760,"len":3829760},{"chunkid":0,"pos":31457280,"size":0,"len":4284481536},{"chunkid":21062,"pos":8388608,"size":217088,"len":217088},{"chunkid":21060,"pos":12582912,"size":8388608,"len":8388608},{"chunkid":21061,"pos":20971520,"size":10485760,"len":10485760},{"chunkid":21065,"pos":31457280,"size":5427200,"len":5427200},{"chunkid":21092,"pos":7487488,"size":36864,"len":36864},{"chunkid":21108,"pos":12435456,"size":12288,"len":12288},{"chunkid":21104,"pos":12451840,"size":32768,"len":32768},{"chunkid":21114,"pos":36884480,"size":81920,"len":81920},{"chunkid":21299,"pos":36974592,"size":3612672,"len":3612672},{"chunkid":21305,"pos":40587264,"size":1548288,"len":1548288},{"chunkid":21300,"pos":42135552,"size":2064384,"len":2064384},{"chunkid":21301,"pos":44199936,"size":1130496,"len":1130496},{"chunkid":21320,"pos":45330432,"size":8192,"len":8192},{"chunkid":21341,"pos":45338624,"size":8192,"len":8192},{"chunkid":21364,"pos":45346816,"size":12288,"len":12288},{"chunkid":21389,"pos":45359104,"size":53248,"len":53248},{"chunkid":21414,"pos":45412352,"size":12288,"len":12288},{"chunkid":21436,"pos":45424640,"size":12288,"len":12288},{"chunkid":21441,"pos":46350336,"size":1421312,"len":1421312},{"chunkid":21440,"pos":46305280,"size":12288,"len":12288},{"chunkid":21469,"pos":45436928,"size":24576,"len":24576},{"chunkid":21500,"pos":47771648,"size":2809856,"len":2809856},{"chunkid":21501,"pos":50581504,"size":1904640,"len":1904640},{"chunkid":21505,"pos":52486144,"size":2416640,"len":2416640},{"chunkid":21509,"pos":54902784,"size":524288,"len":524288},{"chunkid":21503,"pos":12447744,"size":4096,"len":4096},{"chunkid":21511,"pos":12488704,"size":4096,"len":4096},{"chunkid":21502,"pos":57225216,"size":9883648,"len":9883648},{"chunkid":21520,"pos":45461504,"size":135168,"len":135168},{"chunkid":21576,"pos":45596672,"size":131072,"len":131072},{"chunkid":21586,"pos":7487488,"size":32768,"len":32768},{"chunkid":21589,"pos":7524352,"size":4096,"len":4096},{"chunkid":21592,"pos":7536640,"size":36864,"len":36864},{"chunkid":21594,"pos":7581696,"size":135168,"len":135168},{"chunkid":21599,"pos":12443648,"size":4096,"len":4096},{"chunkid":21611,"pos":12468224,"size":20480,"len":20480},{"chunkid":21613,"pos":12496896,"size":86016,"len":86016},{"chunkid":21612,"pos":46137344,"size":167936,"len":167936},{"chunkid":21639,"pos":46317568,"size":32768,"len":32768},{"chunkid":21633,"pos":55427072,"size":32768,"len":32768},{"chunkid":21638,"pos":36896768,"size":16384,"len":16384},{"chunkid":21628,"pos":36945920,"size":16384,"len":16384},{"chunkid":21629,"pos":36966400,"size":8192,"len":8192},{"chunkid":21671,"pos":7716864,"size":671744,"len":671744},{"chunkid":21672,"pos":55459840,"size":1163264,"len":1163264}]},
+                      {"index":8,"slices":[{"chunkid":21510,"size":356352,"len":356352},{"chunkid":21622,"pos":356352,"size":7122944,"len":7122944},{"chunkid":21651,"pos":8953856,"size":1990656,"len":1990656},{"chunkid":21658,"pos":7479296,"size":1474560,"len":1474560},{"chunkid":21652,"pos":13316096,"size":17399808,"len":17399808},{"chunkid":21656,"pos":10944512,"size":2371584,"len":2371584},{"chunkid":21653,"pos":30715904,"size":4902912,"len":4902912},{"chunkid":21655,"pos":35618816,"size":491520,"len":491520},{"chunkid":0,"pos":60817408,"size":0,"len":4273995776},{"chunkid":21669,"pos":37748736,"size":2097152,"len":2097152},{"chunkid":21663,"pos":39845888,"size":21028864,"len":21028864},{"chunkid":21664,"pos":60874752,"size":6234112,"len":6234112},{"chunkid":21670,"pos":36110336,"size":1638400,"len":1638400}]},
+                      {"index":9,"slices":[{"chunkid":0,"pos":10485760,"size":0,"len":4292870144},{"chunkid":21665,"size":8388608,"len":8388608},{"chunkid":21666,"pos":8388608,"size":13287424,"len":13287424},{"chunkid":21673,"pos":21676032,"size":1392640,"len":1392640},{"chunkid":0,"pos":48234496,"size":0,"len":4280287232},{"chunkid":21676,"pos":23068672,"size":10403840,"len":10403840},{"chunkid":21677,"pos":33554432,"size":14680064,"len":14680064},{"chunkid":21679,"pos":48234496,"size":14299136,"len":14299136},{"chunkid":21680,"pos":62533632,"size":380928,"len":380928},{"chunkid":21685,"pos":64667648,"size":2441216,"len":2441216},{"chunkid":21687,"pos":62914560,"size":1753088,"len":1753088}]},
+                      {"index":10,"slices":[{"chunkid":0,"pos":10485760,"size":0,"len":4292870144},{"chunkid":21682,"size":6373376,"len":6373376},{"chunkid":21683,"pos":8388608,"size":6778880,"len":6778880},{"chunkid":21684,"pos":15167488,"size":11173888,"len":11173888},{"chunkid":0,"pos":44040192,"size":0,"len":4282384384},{"chunkid":21691,"pos":27262976,"size":3104768,"len":3104768},{"chunkid":21689,"pos":31457280,"size":12582912,"len":12582912}]}
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "zstore-cache": {
+        "attr": {"inode":901,"type":"directory","mode":493,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806563,"ctime":1658806563,"atimensec":319063226,"mtimensec":430637697,"ctimensec":430637697,"nlink":3,"length":0},
+        "entries": {
+          "01cafb6df0eb4ecab5a514e3a37c8fc6": {
+            "attr": {"inode":906,"type":"directory","mode":493,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806563,"ctime":1658806563,"atimensec":430637697,"mtimensec":433098543,"ctimensec":433098543,"nlink":3,"length":0},
+            "entries": {
+              "0a4c38462e73f4e038ecf36050a438fe0f465650": {
+                "attr": {"inode":907,"type":"directory","mode":493,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806637,"ctime":1658806637,"atimensec":433098543,"mtimensec":547945837,"ctimensec":547945837,"nlink":2,"length":0},
+                "entries": {
+                  "image": {
+                    "attr": {"inode":909,"type":"regular","mode":420,"uid":0,"gid":0,"atime":1658806563,"mtime":1658806636,"ctime":1658806637,"atimensec":444569739,"mtimensec":842946813,"ctimensec":547945837,"nlink":2,"length":4712300544},
+                    "chunks": [
+                      {"index":0,"slices":[{"chunkid":17002,"size":67108864,"len":67108864}]},
+                      {"index":1,"slices":[{"chunkid":17003,"size":67108864,"len":67108864}]},
+                      {"index":2,"slices":[{"chunkid":17004,"size":67108864,"len":67108864}]},
+                      {"index":3,"slices":[{"chunkid":17005,"size":67108864,"len":67108864}]},
+                      {"index":4,"slices":[{"chunkid":17006,"size":67108864,"len":67108864}]},
+                      {"index":5,"slices":[{"chunkid":17007,"size":67108864,"len":67108864}]},
+                      {"index":6,"slices":[{"chunkid":17008,"size":67108864,"len":67108864}]},
+                      {"index":7,"slices":[{"chunkid":17009,"size":67108864,"len":67108864}]},
+                      {"index":8,"slices":[{"chunkid":17010,"size":67108864,"len":67108864}]},
+                      {"index":9,"slices":[{"chunkid":17011,"size":67108864,"len":67108864}]},
+                      {"index":10,"slices":[{"chunkid":17012,"size":67108864,"len":67108864}]},
+                      {"index":11,"slices":[{"chunkid":17013,"size":67108864,"len":67108864}]},
+                      {"index":12,"slices":[{"chunkid":17014,"size":67108864,"len":67108864}]},
+                      {"index":13,"slices":[{"chunkid":17015,"size":67108864,"len":67108864}]},
+                      {"index":14,"slices":[{"chunkid":17016,"size":67108864,"len":67108864}]},
+                      {"index":15,"slices":[{"chunkid":17017,"size":67108864,"len":67108864}]},
+                      {"index":16,"slices":[{"chunkid":17018,"size":67108864,"len":67108864}]},
+                      {"index":17,"slices":[{"chunkid":17019,"size":67108864,"len":67108864}]},
+                      {"index":18,"slices":[{"chunkid":17020,"size":67108864,"len":67108864}]},
+                      {"index":19,"slices":[{"chunkid":17021,"size":67108864,"len":67108864}]},
+                      {"index":20,"slices":[{"chunkid":17022,"size":67108864,"len":67108864}]},
+                      {"index":21,"slices":[{"chunkid":17023,"size":67108864,"len":67108864}]},
+                      {"index":22,"slices":[{"chunkid":17024,"size":67108864,"len":67108864}]},
+                      {"index":23,"slices":[{"chunkid":17025,"size":67108864,"len":67108864}]},
+                      {"index":24,"slices":[{"chunkid":17026,"size":67108864,"len":67108864}]},
+                      {"index":25,"slices":[{"chunkid":17027,"size":67108864,"len":67108864}]},
+                      {"index":26,"slices":[{"chunkid":17028,"size":67108864,"len":67108864}]},
+                      {"index":27,"slices":[{"chunkid":17029,"size":67108864,"len":67108864}]},
+                      {"index":28,"slices":[{"chunkid":17030,"size":67108864,"len":67108864}]},
+                      {"index":29,"slices":[{"chunkid":17031,"size":67108864,"len":67108864}]},
+                      {"index":30,"slices":[{"chunkid":17032,"size":67108864,"len":67108864}]},
+                      {"index":31,"slices":[{"chunkid":17033,"size":67108864,"len":67108864}]},
+                      {"index":32,"slices":[{"chunkid":17034,"size":67108864,"len":67108864}]},
+                      {"index":33,"slices":[{"chunkid":17035,"size":67108864,"len":67108864}]},
+                      {"index":34,"slices":[{"chunkid":17036,"size":67108864,"len":67108864}]},
+                      {"index":35,"slices":[{"chunkid":17037,"size":67108864,"len":67108864}]},
+                      {"index":36,"slices":[{"chunkid":17038,"size":67108864,"len":67108864}]},
+                      {"index":37,"slices":[{"chunkid":17039,"size":67108864,"len":67108864}]},
+                      {"index":38,"slices":[{"chunkid":17040,"size":67108864,"len":67108864}]},
+                      {"index":39,"slices":[{"chunkid":17041,"size":67108864,"len":67108864}]},
+                      {"index":40,"slices":[{"chunkid":17042,"size":67108864,"len":67108864}]},
+                      {"index":41,"slices":[{"chunkid":17043,"size":67108864,"len":67108864}]},
+                      {"index":42,"slices":[{"chunkid":17044,"size":67108864,"len":67108864}]},
+                      {"index":43,"slices":[{"chunkid":17045,"size":67108864,"len":67108864}]},
+                      {"index":44,"slices":[{"chunkid":17046,"size":67108864,"len":67108864}]},
+                      {"index":45,"slices":[{"chunkid":17047,"size":67108864,"len":67108864}]},
+                      {"index":46,"slices":[{"chunkid":17048,"size":67108864,"len":67108864}]},
+                      {"index":47,"slices":[{"chunkid":17049,"size":67108864,"len":67108864}]},
+                      {"index":48,"slices":[{"chunkid":17050,"size":67108864,"len":67108864}]},
+                      {"index":49,"slices":[{"chunkid":17051,"size":67108864,"len":67108864}]},
+                      {"index":50,"slices":[{"chunkid":17052,"size":67108864,"len":67108864}]},
+                      {"index":51,"slices":[{"chunkid":17053,"size":67108864,"len":67108864}]},
+                      {"index":52,"slices":[{"chunkid":17054,"size":67108864,"len":67108864}]},
+                      {"index":53,"slices":[{"chunkid":17055,"size":67108864,"len":67108864}]},
+                      {"index":54,"slices":[{"chunkid":17056,"size":67108864,"len":67108864}]},
+                      {"index":55,"slices":[{"chunkid":17057,"size":67108864,"len":67108864}]},
+                      {"index":56,"slices":[{"chunkid":17058,"size":67108864,"len":67108864}]},
+                      {"index":57,"slices":[{"chunkid":17059,"size":67108864,"len":67108864}]},
+                      {"index":58,"slices":[{"chunkid":17060,"size":67108864,"len":67108864}]},
+                      {"index":59,"slices":[{"chunkid":17061,"size":67108864,"len":67108864}]},
+                      {"index":60,"slices":[{"chunkid":17062,"size":67108864,"len":67108864}]},
+                      {"index":61,"slices":[{"chunkid":17063,"size":67108864,"len":67108864}]},
+                      {"index":62,"slices":[{"chunkid":17064,"size":67108864,"len":67108864}]},
+                      {"index":63,"slices":[{"chunkid":17065,"size":67108864,"len":67108864}]},
+                      {"index":64,"slices":[{"chunkid":17066,"size":67108864,"len":67108864}]},
+                      {"index":65,"slices":[{"chunkid":17067,"size":67108864,"len":67108864}]},
+                      {"index":66,"slices":[{"chunkid":17068,"size":67108864,"len":67108864}]},
+                      {"index":67,"slices":[{"chunkid":17069,"size":67108864,"len":67108864}]},
+                      {"index":68,"slices":[{"chunkid":17070,"size":67108864,"len":67108864}]},
+                      {"index":69,"slices":[{"chunkid":17071,"size":67108864,"len":67108864}]},
+                      {"index":70,"slices":[{"chunkid":17072,"size":14680064,"len":14680064}]}
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Trash": {
+    "attr": {"inode":9223372032828243968,"type":"directory","mode":365,"uid":0,"gid":0,"atime":1658718233,"mtime":1658718233,"ctime":1658718233,"nlink":2,"length":0},
+    "entries": {
+    }
+  }
+}

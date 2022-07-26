@@ -1,0 +1,258 @@
+goroutine profile: total 55
+7 @ 0x483a05 0x48094d 0x21c529d 0x21c521a 0x21c527c 0x21c50f6 0x21c6092 0x46b2e1
+#	0x483a04	syscall.Syscall+0x4							/usr/local/go/src/syscall/asm_linux_amd64.s:20
+#	0x48094c	syscall.read+0x4c							/usr/local/go/src/syscall/zsyscall_linux_amd64.go:687
+#	0x21c529c	syscall.Read+0x1dc							/usr/local/go/src/syscall/syscall_unix.go:189
+#	0x21c5219	github.com/hanwen/go-fuse/v2/fuse.(*Server).readRequest.func1+0x159	/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:291
+#	0x21c527b	github.com/hanwen/go-fuse/v2/fuse.handleEINTR+0x1bb			/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:266
+#	0x21c50f5	github.com/hanwen/go-fuse/v2/fuse.(*Server).readRequest+0x35		/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:289
+#	0x21c6091	github.com/hanwen/go-fuse/v2/fuse.(*Server).loop+0x71			/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:434
+
+4 @ 0x439ad6 0x449b12 0x219a0c8 0x46b2e1
+#	0x219a0c7	github.com/pyroscope-io/client/pyroscope.(*remote).handleJobs+0x87	/go/pkg/mod/github.com/pyroscope-io/client@v0.2.1/pyroscope/remote.go:192
+
+2 @ 0x439ad6 0x44ac0c 0x44abe6 0x466be5 0x4754e5 0x476ab6 0x476a95 0x10cc347 0x1a6ccb0 0x46b2e1
+#	0x466be4	sync.runtime_SemacquireMutex+0x24					/usr/local/go/src/runtime/sema.go:71
+#	0x4754e4	sync.(*Mutex).lockSlow+0x164						/usr/local/go/src/sync/mutex.go:138
+#	0x476ab5	sync.(*Mutex).Lock+0x35							/usr/local/go/src/sync/mutex.go:81
+#	0x476a94	sync.(*RWMutex).Lock+0x14						/usr/local/go/src/sync/rwmutex.go:111
+#	0x10cc346	github.com/juicedata/juicefs/pkg/meta.(*redisMeta).Write+0x126		/go/src/github.com/juicedata/juicefs/pkg/meta/redis.go:1963
+#	0x1a6ccaf	github.com/juicedata/juicefs/pkg/vfs.(*chunkWriter).commitThread+0x1cf	/go/src/github.com/juicedata/juicefs/pkg/vfs/writer.go:201
+
+1 @ 0x40cfb4 0x467298 0x1e07379 0x46b2e1
+#	0x467297	os/signal.signal_recv+0x97	/usr/local/go/src/runtime/sigqueue.go:169
+#	0x1e07378	os/signal.loop+0x18		/usr/local/go/src/os/signal/signal_unix.go:24
+
+1 @ 0x41a967 0x41a95b 0x219b193 0x219adea 0x219a836 0x46b2e1
+#	0x219b192	github.com/pyroscope-io/client/pyroscope.(*session).uploadData+0x332	/go/pkg/mod/github.com/pyroscope-io/client@v0.2.1/pyroscope/session.go:194
+#	0x219ade9	github.com/pyroscope-io/client/pyroscope.(*session).reset+0x189		/go/pkg/mod/github.com/pyroscope-io/client@v0.2.1/pyroscope/session.go:160
+#	0x219a835	github.com/pyroscope-io/client/pyroscope.(*session).takeSnapshots+0x115	/go/pkg/mod/github.com/pyroscope-io/client@v0.2.1/pyroscope/session.go:105
+
+1 @ 0x439ad6 0x407acc 0x4074f8 0x1a46da5 0x46b2e1
+#	0x1a46da4	github.com/juicedata/juicefs/pkg/chunk.(*cacheStore).flush+0x64	/go/src/github.com/juicedata/juicefs/pkg/chunk/disk_cache.go:285
+
+1 @ 0x439ad6 0x407acc 0x4074f8 0x1ee3dd8 0x46b2e1
+#	0x1ee3dd7	github.com/minio/minio/cmd.newTransitionState.func1+0x37	/go/pkg/mod/github.com/juicedata/minio@v0.0.0-20220613143934-cee0571a1b03/cmd/bucket-lifecycle.go:135
+
+1 @ 0x439ad6 0x407acc 0x4074f8 0x1f044d8 0x46b2e1
+#	0x1f044d7	github.com/minio/minio/cmd.newReplicationState.func1+0x37	/go/pkg/mod/github.com/juicedata/minio@v0.0.0-20220613143934-cee0571a1b03/cmd/bucket-replication.go:803
+
+1 @ 0x439ad6 0x407acc 0x4074f8 0x21ef465 0x46b2e1
+#	0x21ef464	github.com/juicedata/juicefs/cmd.installHandler.func1+0x64	/go/src/github.com/juicedata/juicefs/cmd/mount.go:94
+
+1 @ 0x439ad6 0x407acc 0x407538 0x1a4d385 0x46b2e1
+#	0x1a4d384	github.com/juicedata/juicefs/pkg/chunk.(*prefetcher).do+0x44	/go/src/github.com/juicedata/juicefs/pkg/chunk/prefetch.go:41
+
+1 @ 0x439ad6 0x407acc 0x407538 0x1bae529 0x46b2e1
+#	0x1bae528	github.com/rjeczalik/notify.(*nonrecursiveTree).dispatch+0x48	/go/pkg/mod/github.com/rjeczalik/notify@v0.9.2/tree_nonrecursive.go:36
+
+1 @ 0x439ad6 0x407acc 0x407538 0x1baed7a 0x46b2e1
+#	0x1baed79	github.com/rjeczalik/notify.(*nonrecursiveTree).internal+0x59	/go/pkg/mod/github.com/rjeczalik/notify@v0.9.2/tree_nonrecursive.go:81
+
+1 @ 0x439ad6 0x407acc 0x407538 0xb6056a 0x46b2e1
+#	0xb60569	github.com/golang/glog.(*loggingT).flushDaemon+0x69	/go/pkg/mod/github.com/golang/glog@v0.0.0-20160126235308-23def4e6c14b/glog.go:882
+
+1 @ 0x439ad6 0x432153 0x4652c9 0x4a3eb2 0x4a521a 0x4a5208 0x559c29 0x56c225 0x81f93f 0x46b2e1
+#	0x4652c8	internal/poll.runtime_pollWait+0x88		/usr/local/go/src/runtime/netpoll.go:234
+#	0x4a3eb1	internal/poll.(*pollDesc).wait+0x31		/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4a5219	internal/poll.(*pollDesc).waitRead+0x259	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4a5207	internal/poll.(*FD).Read+0x247			/usr/local/go/src/internal/poll/fd_unix.go:167
+#	0x559c28	net.(*netFD).Read+0x28				/usr/local/go/src/net/fd_posix.go:56
+#	0x56c224	net.(*conn).Read+0x44				/usr/local/go/src/net/net.go:183
+#	0x81f93e	net/http.(*connReader).backgroundRead+0x3e	/usr/local/go/src/net/http/server.go:672
+
+1 @ 0x439ad6 0x432153 0x4652c9 0x4a3eb2 0x4a521a 0x4a5208 0x559c29 0x56c225 0x83f2ae 0x534c63 0x534dbd 0x84006c 0x46b2e1
+#	0x4652c8	internal/poll.runtime_pollWait+0x88		/usr/local/go/src/runtime/netpoll.go:234
+#	0x4a3eb1	internal/poll.(*pollDesc).wait+0x31		/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4a5219	internal/poll.(*pollDesc).waitRead+0x259	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4a5207	internal/poll.(*FD).Read+0x247			/usr/local/go/src/internal/poll/fd_unix.go:167
+#	0x559c28	net.(*netFD).Read+0x28				/usr/local/go/src/net/fd_posix.go:56
+#	0x56c224	net.(*conn).Read+0x44				/usr/local/go/src/net/net.go:183
+#	0x83f2ad	net/http.(*persistConn).Read+0x4d		/usr/local/go/src/net/http/transport.go:1926
+#	0x534c62	bufio.(*Reader).fill+0x102			/usr/local/go/src/bufio/bufio.go:101
+#	0x534dbc	bufio.(*Reader).Peek+0x5c			/usr/local/go/src/bufio/bufio.go:139
+#	0x84006b	net/http.(*persistConn).readLoop+0x1ab		/usr/local/go/src/net/http/transport.go:2087
+
+1 @ 0x439ad6 0x432153 0x4652c9 0x4a3eb2 0x4a720c 0x4a71f9 0x55b3d5 0x5754c8 0x57469d 0x21946e5 0x46b2e1
+#	0x4652c8	internal/poll.runtime_pollWait+0x88		/usr/local/go/src/runtime/netpoll.go:234
+#	0x4a3eb1	internal/poll.(*pollDesc).wait+0x31		/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4a720b	internal/poll.(*pollDesc).waitRead+0x22b	/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4a71f8	internal/poll.(*FD).Accept+0x218		/usr/local/go/src/internal/poll/fd_unix.go:402
+#	0x55b3d4	net.(*netFD).accept+0x34			/usr/local/go/src/net/fd_unix.go:173
+#	0x5754c7	net.(*TCPListener).accept+0x27			/usr/local/go/src/net/tcpsock_posix.go:140
+#	0x57469c	net.(*TCPListener).Accept+0x3c			/usr/local/go/src/net/tcpsock.go:262
+#	0x21946e4	github.com/google/gops/agent.listen+0x44	/go/pkg/mod/github.com/google/gops@v0.3.22/agent/agent.go:130
+
+1 @ 0x439ad6 0x432153 0x4652c9 0x4a3eb2 0x4a720c 0x4a71f9 0x55b3d5 0x5754c8 0x57469d 0x82a774 0x21efd8a 0x21efd8b 0x46b2e1
+#	0x4652c8	internal/poll.runtime_pollWait+0x88				/usr/local/go/src/runtime/netpoll.go:234
+#	0x4a3eb1	internal/poll.(*pollDesc).wait+0x31				/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4a720b	internal/poll.(*pollDesc).waitRead+0x22b			/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4a71f8	internal/poll.(*FD).Accept+0x218				/usr/local/go/src/internal/poll/fd_unix.go:402
+#	0x55b3d4	net.(*netFD).accept+0x34					/usr/local/go/src/net/fd_unix.go:173
+#	0x5754c7	net.(*TCPListener).accept+0x27					/usr/local/go/src/net/tcpsock_posix.go:140
+#	0x57469c	net.(*TCPListener).Accept+0x3c					/usr/local/go/src/net/tcpsock.go:262
+#	0x82a773	net/http.(*Server).Serve+0x393					/usr/local/go/src/net/http/server.go:3002
+#	0x21efd89	net/http.Serve+0x49						/usr/local/go/src/net/http/server.go:2506
+#	0x21efd8a	github.com/juicedata/juicefs/cmd.exposeMetrics.func1+0x4a	/go/src/github.com/juicedata/juicefs/cmd/mount.go:154
+
+1 @ 0x439ad6 0x432153 0x4652c9 0x4a3eb2 0x4a720c 0x4a71f9 0x55b3d5 0x5754c8 0x57469d 0x82a774 0x82a39d 0x220a6a9 0x220a6c4 0x46b2e1
+#	0x4652c8	internal/poll.runtime_pollWait+0x88			/usr/local/go/src/runtime/netpoll.go:234
+#	0x4a3eb1	internal/poll.(*pollDesc).wait+0x31			/usr/local/go/src/internal/poll/fd_poll_runtime.go:84
+#	0x4a720b	internal/poll.(*pollDesc).waitRead+0x22b		/usr/local/go/src/internal/poll/fd_poll_runtime.go:89
+#	0x4a71f8	internal/poll.(*FD).Accept+0x218			/usr/local/go/src/internal/poll/fd_unix.go:402
+#	0x55b3d4	net.(*netFD).accept+0x34				/usr/local/go/src/net/fd_unix.go:173
+#	0x5754c7	net.(*TCPListener).accept+0x27				/usr/local/go/src/net/tcpsock_posix.go:140
+#	0x57469c	net.(*TCPListener).Accept+0x3c				/usr/local/go/src/net/tcpsock.go:262
+#	0x82a773	net/http.(*Server).Serve+0x393				/usr/local/go/src/net/http/server.go:3002
+#	0x82a39c	net/http.(*Server).ListenAndServe+0x7c			/usr/local/go/src/net/http/server.go:2931
+#	0x220a6a8	net/http.ListenAndServe+0x28				/usr/local/go/src/net/http/server.go:3185
+#	0x220a6c3	github.com/juicedata/juicefs/cmd.setup.func1+0x43	/go/src/github.com/juicedata/juicefs/cmd/main.go:247
+
+1 @ 0x439ad6 0x449b12 0x1208fdf 0x46b2e1
+#	0x1208fde	github.com/baidubce/bce-sdk-go/util/log.NewLogger.func1+0xbe	/go/pkg/mod/github.com/baidubce/bce-sdk-go@v0.9.111/util/log/logger.go:375
+
+1 @ 0x439ad6 0x449b12 0x153b419 0x46b2e1
+#	0x153b418	go.opencensus.io/stats/view.(*worker).start+0xb8	/go/pkg/mod/go.opencensus.io@v0.23.0/stats/view/worker.go:276
+
+1 @ 0x439ad6 0x449b12 0x1a4f54b 0x1a6359c 0x21ce60d 0x21bc523 0x21c64b3 0x21c6130 0x46b2e1
+#	0x1a4f54a	github.com/juicedata/juicefs/pkg/vfs.readAccessLog+0x30a	/go/src/github.com/juicedata/juicefs/pkg/vfs/accesslog.go:107
+#	0x1a6359b	github.com/juicedata/juicefs/pkg/vfs.(*VFS).Read+0x37b		/go/src/github.com/juicedata/juicefs/pkg/vfs/vfs.go:489
+#	0x21ce60c	github.com/juicedata/juicefs/pkg/fuse.(*fileSystem).Read+0xec	/go/src/github.com/juicedata/juicefs/pkg/fuse/fuse.go:262
+#	0x21bc522	github.com/hanwen/go-fuse/v2/fuse.doRead+0x82			/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/opcode.go:373
+#	0x21c64b2	github.com/hanwen/go-fuse/v2/fuse.(*Server).handleRequest+0x1f2	/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:483
+#	0x21c612f	github.com/hanwen/go-fuse/v2/fuse.(*Server).loop+0x10f		/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:456
+
+1 @ 0x439ad6 0x449b12 0x1bbb2c8 0x46b2e1
+#	0x1bbb2c7	github.com/minio/minio/cmd/http.NewDNSCache.func1+0xe7	/go/pkg/mod/github.com/juicedata/minio@v0.0.0-20220613143934-cee0571a1b03/cmd/http/dial_dnscache.go:129
+
+1 @ 0x439ad6 0x449b12 0x841d3b 0x46b2e1
+#	0x841d3a	net/http.(*persistConn).writeLoop+0xfa	/usr/local/go/src/net/http/transport.go:2386
+
+1 @ 0x439ad6 0x449b12 0x884f5a 0x46b2e1
+#	0x884f59	github.com/go-redis/redis/v8/internal/pool.(*ConnPool).reaper+0xd9	/go/pkg/mod/github.com/go-redis/redis/v8@v8.11.5/internal/pool/pool.go:485
+
+1 @ 0x439ad6 0x467b2e 0x10b1ee5 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d						/usr/local/go/src/runtime/time.go:193
+#	0x10b1ee4	github.com/juicedata/juicefs/pkg/meta.(*openfiles).cleanup+0x64	/go/src/github.com/juicedata/juicefs/pkg/meta/openfile.go:47
+
+1 @ 0x439ad6 0x467b2e 0x1972086 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d						/usr/local/go/src/runtime/time.go:193
+#	0x1972085	github.com/viki-org/dnscache.(*Resolver).autoRefresh+0x25	/go/pkg/mod/github.com/viki-org/dnscache@v0.0.0-20130720023526-c70c1f23c5d8/dnscache.go:74
+
+1 @ 0x439ad6 0x467b2e 0x1a4507a 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d								/usr/local/go/src/runtime/time.go:193
+#	0x1a45079	github.com/juicedata/juicefs/pkg/chunk.(*cacheStore).checkFreeSpace+0x39	/go/src/github.com/juicedata/juicefs/pkg/chunk/disk_cache.go:126
+
+1 @ 0x439ad6 0x467b2e 0x1a452ed 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d								/usr/local/go/src/runtime/time.go:193
+#	0x1a452ec	github.com/juicedata/juicefs/pkg/chunk.(*cacheStore).refreshCacheKeys+0x2c	/go/src/github.com/juicedata/juicefs/pkg/chunk/disk_cache.go:133
+
+1 @ 0x439ad6 0x467b2e 0x1a5c2ba 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x1a5c2b9	github.com/juicedata/juicefs/pkg/vfs.(*dataReader).checkReadBuffer+0x39	/go/src/github.com/juicedata/juicefs/pkg/vfs/reader.go:718
+
+1 @ 0x439ad6 0x467b2e 0x1a68865 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x1a68864	github.com/juicedata/juicefs/pkg/vfs.(*VFS).cleanupModified+0x64	/go/src/github.com/juicedata/juicefs/pkg/vfs/vfs.go:978
+
+1 @ 0x439ad6 0x467b2e 0x1a6ee3d 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x1a6ee3c	github.com/juicedata/juicefs/pkg/vfs.(*dataWriter).flushAll+0x3c	/go/src/github.com/juicedata/juicefs/pkg/vfs/writer.go:462
+
+1 @ 0x439ad6 0x467b2e 0x1bce4ce 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x1bce4cd	github.com/minio/minio/cmd/logger.(*logOnceType).cleanupRoutine+0x2d	/go/pkg/mod/github.com/juicedata/minio@v0.0.0-20220613143934-cee0571a1b03/cmd/logger/logonce.go:64
+
+1 @ 0x439ad6 0x467b2e 0x21b4d2b 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d						/usr/local/go/src/runtime/time.go:193
+#	0x21b4d2a	github.com/juicedata/juicefs/pkg/usage.ReportUsage+0x16a	/go/src/github.com/juicedata/juicefs/pkg/usage/usage.go:91
+
+1 @ 0x439ad6 0x467b2e 0x21f22e5 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x21f22e4	github.com/juicedata/juicefs/cmd.NewReloadableStorage.func1+0x84	/go/src/github.com/juicedata/juicefs/cmd/mount.go:374
+
+1 @ 0x439ad6 0x467b2e 0x5b90c5 0x10a1d92 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d								/usr/local/go/src/runtime/time.go:193
+#	0x5b90c4	github.com/juicedata/juicefs/pkg/utils.SleepWithJitter+0x64			/go/src/github.com/juicedata/juicefs/pkg/utils/general.go:26
+#	0x10a1d91	github.com/juicedata/juicefs/pkg/meta.(*baseMeta).InitMetrics.func1+0x31	/go/src/github.com/juicedata/juicefs/pkg/meta/base.go:178
+
+1 @ 0x439ad6 0x467b2e 0x5b90c5 0x10a2c35 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x5b90c4	github.com/juicedata/juicefs/pkg/utils.SleepWithJitter+0x64		/go/src/github.com/juicedata/juicefs/pkg/utils/general.go:26
+#	0x10a2c34	github.com/juicedata/juicefs/pkg/meta.(*baseMeta).refreshSession+0x34	/go/src/github.com/juicedata/juicefs/pkg/meta/base.go:283
+
+1 @ 0x439ad6 0x467b2e 0x5b90c5 0x10a33f1 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x5b90c4	github.com/juicedata/juicefs/pkg/utils.SleepWithJitter+0x64		/go/src/github.com/juicedata/juicefs/pkg/utils/general.go:26
+#	0x10a33f0	github.com/juicedata/juicefs/pkg/meta.(*baseMeta).refreshUsage+0x30	/go/src/github.com/juicedata/juicefs/pkg/meta/base.go:344
+
+1 @ 0x439ad6 0x467b2e 0x5b90c5 0x10a3785 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d								/usr/local/go/src/runtime/time.go:193
+#	0x5b90c4	github.com/juicedata/juicefs/pkg/utils.SleepWithJitter+0x64			/go/src/github.com/juicedata/juicefs/pkg/utils/general.go:26
+#	0x10a3784	github.com/juicedata/juicefs/pkg/meta.(*baseMeta).cleanupDeletedFiles+0x44	/go/src/github.com/juicedata/juicefs/pkg/meta/base.go:382
+
+1 @ 0x439ad6 0x467b2e 0x5b90c5 0x10a3acc 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x5b90c4	github.com/juicedata/juicefs/pkg/utils.SleepWithJitter+0x64		/go/src/github.com/juicedata/juicefs/pkg/utils/general.go:26
+#	0x10a3acb	github.com/juicedata/juicefs/pkg/meta.(*baseMeta).cleanupSlices+0x2b	/go/src/github.com/juicedata/juicefs/pkg/meta/base.go:401
+
+1 @ 0x439ad6 0x467b2e 0x5b90c5 0x10aa33d 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d							/usr/local/go/src/runtime/time.go:193
+#	0x5b90c4	github.com/juicedata/juicefs/pkg/utils.SleepWithJitter+0x64		/go/src/github.com/juicedata/juicefs/pkg/utils/general.go:26
+#	0x10aa33c	github.com/juicedata/juicefs/pkg/meta.(*baseMeta).cleanupTrash+0x3c	/go/src/github.com/juicedata/juicefs/pkg/meta/base.go:1021
+
+1 @ 0x439ad6 0x467b2e 0x5b90c5 0x1a4f91a 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d						/usr/local/go/src/runtime/time.go:193
+#	0x5b90c4	github.com/juicedata/juicefs/pkg/utils.SleepWithJitter+0x64	/go/src/github.com/juicedata/juicefs/pkg/utils/general.go:26
+#	0x1a4f919	github.com/juicedata/juicefs/pkg/vfs.Backup+0x99		/go/src/github.com/juicedata/juicefs/pkg/vfs/backup.go:37
+
+1 @ 0x439ad6 0x467b2e 0x5bd0e5 0x46b2e1
+#	0x467b2d	time.Sleep+0x12d						/usr/local/go/src/runtime/time.go:193
+#	0x5bd0e4	github.com/juicedata/juicefs/pkg/utils.init.0.func2+0x24	/go/src/github.com/juicedata/juicefs/pkg/utils/alloc.go:78
+
+1 @ 0x464de5 0x152ae75 0x152ac8d 0x1527e0b 0x1a36a5a 0x1a3760e 0x82670f 0x8284c9 0x82a1fb 0x8257e8 0x46b2e1
+#	0x464de4	runtime/pprof.runtime_goroutineProfileWithLabels+0x24	/usr/local/go/src/runtime/mprof.go:746
+#	0x152ae74	runtime/pprof.writeRuntimeProfile+0xb4			/usr/local/go/src/runtime/pprof/pprof.go:724
+#	0x152ac8c	runtime/pprof.writeGoroutine+0x4c			/usr/local/go/src/runtime/pprof/pprof.go:684
+#	0x1527e0a	runtime/pprof.(*Profile).WriteTo+0x14a			/usr/local/go/src/runtime/pprof/pprof.go:331
+#	0x1a36a59	net/http/pprof.handler.ServeHTTP+0x499			/usr/local/go/src/net/http/pprof/pprof.go:253
+#	0x1a3760d	net/http/pprof.Index+0x12d				/usr/local/go/src/net/http/pprof/pprof.go:371
+#	0x82670e	net/http.HandlerFunc.ServeHTTP+0x2e			/usr/local/go/src/net/http/server.go:2047
+#	0x8284c8	net/http.(*ServeMux).ServeHTTP+0x148			/usr/local/go/src/net/http/server.go:2425
+#	0x82a1fa	net/http.serverHandler.ServeHTTP+0x43a			/usr/local/go/src/net/http/server.go:2879
+#	0x8257e7	net/http.(*conn).serve+0xb07				/usr/local/go/src/net/http/server.go:1930
+
+1 @ 0x483a05 0x48094d 0x21c529d 0x21c521a 0x21c527c 0x21c50f6 0x21c6092 0x21c5d35 0x21d06cc 0x21f4565 0x21f2ea5 0x60cfca 0x60a9be 0x21e98ce 0x21e75ca 0x220ef8e 0x439707 0x46b2e1
+#	0x483a04	syscall.Syscall+0x4							/usr/local/go/src/syscall/asm_linux_amd64.s:20
+#	0x48094c	syscall.read+0x4c							/usr/local/go/src/syscall/zsyscall_linux_amd64.go:687
+#	0x21c529c	syscall.Read+0x1dc							/usr/local/go/src/syscall/syscall_unix.go:189
+#	0x21c5219	github.com/hanwen/go-fuse/v2/fuse.(*Server).readRequest.func1+0x159	/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:291
+#	0x21c527b	github.com/hanwen/go-fuse/v2/fuse.handleEINTR+0x1bb			/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:266
+#	0x21c50f5	github.com/hanwen/go-fuse/v2/fuse.(*Server).readRequest+0x35		/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:289
+#	0x21c6091	github.com/hanwen/go-fuse/v2/fuse.(*Server).loop+0x71			/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:434
+#	0x21c5d34	github.com/hanwen/go-fuse/v2/fuse.(*Server).Serve+0x34			/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:378
+#	0x21d06cb	github.com/juicedata/juicefs/pkg/fuse.Serve+0x38b			/go/src/github.com/juicedata/juicefs/pkg/fuse/fuse.go:474
+#	0x21f4564	github.com/juicedata/juicefs/cmd.mount_main+0x244			/go/src/github.com/juicedata/juicefs/cmd/mount_unix.go:182
+#	0x21f2ea4	github.com/juicedata/juicefs/cmd.mount+0x7c4				/go/src/github.com/juicedata/juicefs/cmd/mount.go:445
+#	0x60cfc9	github.com/urfave/cli/v2.(*Command).Run+0x649				/go/pkg/mod/github.com/urfave/cli/v2@v2.4.0/command.go:163
+#	0x60a9bd	github.com/urfave/cli/v2.(*App).RunContext+0x81d			/go/pkg/mod/github.com/urfave/cli/v2@v2.4.0/app.go:313
+#	0x21e98cd	github.com/urfave/cli/v2.(*App).Run+0x232d				/go/pkg/mod/github.com/urfave/cli/v2@v2.4.0/app.go:224
+#	0x21e75c9	github.com/juicedata/juicefs/cmd.Main+0x29				/go/src/github.com/juicedata/juicefs/cmd/main.go:84
+#	0x220ef8d	main.main+0x2d								/go/src/github.com/juicedata/juicefs/main.go:29
+#	0x439706	runtime.main+0x226							/usr/local/go/src/runtime/proc.go:255
+
+1 @ 0x8b2aec 0x10bc649 0x8ce7bc 0x8dcd66 0x10bc2c5 0x8dc344 0x10b99f7 0x10bbcd6 0x1a64e89 0x21ceeca 0x21bced2 0x21c64b3 0x21c6130 0x46b2e1
+#	0x8b2aeb	github.com/go-redis/redis/v8.cmdable.RPush+0x1eb				/go/pkg/mod/github.com/go-redis/redis/v8@v8.11.5/commands.go:1524
+#	0x10bc648	github.com/juicedata/juicefs/pkg/meta.(*redisMeta).Fallocate.func2.1+0x308	/go/src/github.com/juicedata/juicefs/pkg/meta/redis.go:962
+#	0x8ce7bb	github.com/go-redis/redis/v8.(*Pipeline).Pipelined+0x3b				/go/pkg/mod/github.com/go-redis/redis/v8@v8.11.5/pipeline.go:129
+#	0x8dcd65	github.com/go-redis/redis/v8.(*Tx).TxPipelined+0x45				/go/pkg/mod/github.com/go-redis/redis/v8@v8.11.5/tx.go:136
+#	0x10bc2c4	github.com/juicedata/juicefs/pkg/meta.(*redisMeta).Fallocate.func2+0x4c4	/go/src/github.com/juicedata/juicefs/pkg/meta/redis.go:949
+#	0x8dc343	github.com/go-redis/redis/v8.(*Client).Watch+0x103				/go/pkg/mod/github.com/go-redis/redis/v8@v8.11.5/tx.go:75
+#	0x10b99f6	github.com/juicedata/juicefs/pkg/meta.(*redisMeta).txn+0x376			/go/src/github.com/juicedata/juicefs/pkg/meta/redis.go:776
+#	0x10bbcd5	github.com/juicedata/juicefs/pkg/meta.(*redisMeta).Fallocate+0x4d5		/go/src/github.com/juicedata/juicefs/pkg/meta/redis.go:918
+#	0x1a64e88	github.com/juicedata/juicefs/pkg/vfs.(*VFS).Fallocate+0x348			/go/src/github.com/juicedata/juicefs/pkg/vfs/vfs.go:648
+#	0x21ceec9	github.com/juicedata/juicefs/pkg/fuse.(*fileSystem).Fallocate+0xa9		/go/src/github.com/juicedata/juicefs/pkg/fuse/fuse.go:302
+#	0x21bced1	github.com/hanwen/go-fuse/v2/fuse.doFallocate+0x31				/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/opcode.go:461
+#	0x21c64b2	github.com/hanwen/go-fuse/v2/fuse.(*Server).handleRequest+0x1f2			/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:483
+#	0x21c612f	github.com/hanwen/go-fuse/v2/fuse.(*Server).loop+0x10f				/go/pkg/mod/github.com/juicedata/go-fuse/v2@v2.1.1-0.20210926080226-cfe1ec802a7f/fuse/server.go:456
+
